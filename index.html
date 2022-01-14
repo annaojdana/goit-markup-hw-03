@@ -6,116 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <nav class="nav">
-            <a href="#"><span>Web</span>Studio</a>
-            <ul class="nav-items">
-                <li class="nav-item"><a href="#">Agencja</a></li>
-                <li class="nav-item"><a href="#">Portfolio</a></li>
-                <li class="nav-item"><a href="#">kontakt</a></li>
-            </ul>
+        <nav>
+            <div class="header-nav">
+                <a href="index.html" class="logo"><span class="logo-item">Web</span>Studio</a>
+                <ul class="nav-items">
+                    <li><a class="nav-item" href="#">Agencja</a></li>
+                    <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-item" href="contact.html">Kontakt</a></li>
+                </ul>
+                <ul class="header-address">
+                    <li><a class="nav-item" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="nav-item" href="tel:+48111111111">+48 111 111 111</a></li>
+                </ul>
+            </div>
+
         </nav>
-        <div class="header-address">
-            <ul>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-            </ul>
-        </div>
         <div class="header-bg">
             <div class="header-text">
                 <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button type="button">Zamów usługę</button>
+                <button type="button" class="header-btn">Zamów usługę</button>
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Lorem ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
-                            dui.Interdum et malesuada
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Lorem ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
-                            dui. Interdum et malesuada
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Lorem ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
-                            dui. Interdum et malesuada
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Lorem ipsum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
-                            dui. Interdum et malesuada
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div>
+        <section class="about-us">
+
+            <ul class="about-us-text">
+                <li>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
+                        dui.Interdum et malesuada
+                    </p>
+                </li>
+                <li>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
+                        dui. Interdum et malesuada
+                    </p>
+                </li>
+                <li>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
+                        dui. Interdum et malesuada
+                    </p>
+                </li>
+                <li>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales
+                        dui. Interdum et malesuada
+                    </p>
+                </li>
+            </ul>
+
+            <div class="about-us-heading">
                 <h2>Czym się zajmujemy</h2>
-                <div>
-                    <ul>
-                        <li><img src="images/office.jpg" alt="męźczyzna piszący na klawiaturze" width="370"
-                                height="294"></li>
-                        <li><img src="images/mobile.jpg"
-                                alt="kobieta trzymająca w dłoni telefon komorkowy i pisząca na laptopie" width="370"
-                                height="294"></li>
-                        <li><img src="images/tablet.jpg" alt="kobieta trzymająca tablet" width="370" height="294"></li>
-                    </ul>
-                </div>
+
+                <ul class="about-us-img">
+                    <li><img src="images/office.jpg" alt="męźczyzna piszący na klawiaturze" width="370" height="294">
+                    </li>
+                    <li><img src="images/mobile.jpg"
+                            alt="kobieta trzymająca w dłoni telefon komorkowy i pisząca na laptopie" width="370"
+                            height="294"></li>
+                    <li><img src="images/tablet.jpg" alt="kobieta trzymająca tablet" width="370" height="294"></li>
+                </ul>
+
             </div>
         </section>
-        <section>
-            <div>
+        <section class="team">
+            <div class="team-box">
                 <h2>Nasz zespół</h2>
-                <ul>
-                    <li>
-                        <img src="images/john.jpg" alt="zdjęcie product designera" width="270" height="260">
+                <ul class="team-cards">
+                    <li class="team-card">
+                        <img src="images/john.jpg" alt="zdjęcie product designera">
                         <h5>John Doe</h5>
                         <p>Product Designer</p>
                     </li>
-                    <li>
-                        <img src="images/ola.jpg" alt="zdjęcie fronted developera" width="270" height="260">
+                    <li class="team-card">
+                        <img src="images/ola.jpg" alt="zdjęcie fronted developera">
                         <h5>John Doe</h5>
                         <p>Fronted Developer</p>
                     </li>
-                    <li>
-                        <img src="images/peter.jpg" alt="zdjęcie pracownika marketingu" width="270" height="260">
+                    <li class="team-card">
+                        <img src="images/peter.jpg" alt="zdjęcie pracownika marketingu">
                         <h5>John Doe</h5>
                         <p>Marketing</p>
                     </li>
-                    <li>
-                        <img src="images/tom.jpg" alt="zdjęcie UI designera" width="270" height="260">
+                    <li class="team-card">
+                        <img src="images/tom.jpg" alt="zdjęcie UI designera">
                         <h5>John Doe</h5>
                         <p>UI Designer</p>
                     </li>
                 </ul>
             </div>
+
+
         </section>
     </main>
-    <footer>
-        <div>
-            <a href="index.html"><span>Web</span>Studio</a>
-            <address>
-                m. Warszawa, Aleje Jerozolimskie 21
+    <footer class="footer">
+        <div class="footer-text">
+            <a href="index.html" class="logo logo-footer"><span class="logo-item">Web</span>Studio</a>
+            <address class="address-box">
+                <p>m. Warszawa, Aleje Jerozolimskie 21</p> 
                 <a href="mailto:info@example.com">info@example.com</a>
                 <a href="tel:+48111111111">+48 111 111 111</a>
             </address>
         </div>
     </footer>
 </body>
+
 </html>
