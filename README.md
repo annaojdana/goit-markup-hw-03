@@ -1,7 +1,7 @@
 # goit-markup-hw-02 - praca domowa z HTML, CSS
 
 Projekt powstał w ramach kursu FULLSTACK PROGRAMISTA OD ZERA
-> 
+> [https://annaojdana.github.io/goit-markup-hw-02/](https://annaojdana.github.io/goit-markup-hw-02/)
 
 ## Szczegóły projektu
 
