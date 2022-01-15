@@ -11,15 +11,6 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
 }
 
-.header-nav {
-  margin: 0 auto;
-  width: 1600px;
-  height: 80px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   margin-left: 215px;
   margin-right: 70px;
@@ -34,6 +25,20 @@ body {
 .logo-item {
   color: #2196f3;
 }
+
+/* ===========
+NAVIGATION
+============= */
+
+.header-nav {
+  margin: 0 auto;
+  width: 1600px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
 .nav-items,
 .header-address {
   padding: 0;
@@ -56,6 +61,10 @@ body {
 .nav-item:focus {
   color: #2196f3;
 }
+
+/* ===========
+HEADER IN INDEX HTML
+============= */
 .header-bg {
   position: relative;
   height: 600px;
@@ -82,7 +91,7 @@ body {
   margin-top: 30px;
   padding: 0 42px;
   height: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 16px;
   background: #2196f3;
@@ -92,7 +101,9 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
-
+/* ===========
+SECTION ABOUT US
+============= */
 .about-us {
   margin: 0 auto;
   padding-top: 94px;
@@ -139,6 +150,10 @@ body {
 .about-us-img img {
   margin: 50px 15px 0;
 }
+
+/* ===========
+SECTION TEAM
+============= */
 .team {
   background-color: #f5f4fa;
   padding: 94px 0;
@@ -185,6 +200,10 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+/* ===========
+FOOTER
+============= */
 .footer {
   background-color: #2f303a;
 }
@@ -213,4 +232,69 @@ body {
   padding-top: 9px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===========
+PORTFOLIO SECTION WITH BUTTONS
+============= */
+.portfolio {
+  margin: 0 auto;
+  padding-bottom: 64px;
+  width: 1600px;
+}
+
+.portfolio-btns {
+  padding: 94px 0 50px;
+  margin-left: 506px;
+  list-style: none;
+  display: flex;
+}
+
+.portfolio-btn {
+  margin: 0 4px;
+  padding: 6px 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  color: #212121;
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+.portfolio-cards {
+  margin-left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.portfolio-card {
+  margin: 0 15px 30px;
+  border: 1px solid #eeeeee;
+}
+.portfolio-card img {
+  width: 370px;
+  height: 294px;
+}
+.portfolio-card h4 {
+  margin: 20px 24px 4px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.portfolio-card p {
+  padding: 0 24px 20px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
