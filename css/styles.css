@@ -220,6 +220,7 @@ FOOTER
   margin-left: 215px;
   color: var(--white-color);
   font-size: 14px;
+  font-style: normal;
   letter-spacing: 0.03em;
   display: flex;
   flex-direction: column;
