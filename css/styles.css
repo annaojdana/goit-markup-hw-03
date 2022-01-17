@@ -117,9 +117,12 @@ SECTION ABOUT US
 }
 .about-us-text,
 .about-us-img {
-  margin: 0 200px;
   list-style: none;
   display: flex;
+  justify-content: center;
+}
+.about-us-text{
+  margin: 0 200px;
 }
 .about-us-heading {
   margin: 94px 0;
@@ -168,9 +171,9 @@ SECTION TEAM
   letter-spacing: 0.03em;
 }
 .team-cards {
-  margin-left: 200px;
   display: flex;
   list-style: none;
+  justify-content: center;
 }
 .team-card {
   margin: 0 15px;
@@ -259,10 +262,11 @@ PORTFOLIO SECTION
   color: var(--white-color);
 }
 .portfolio-cards {
-  margin-left: 200px;
+  padding: 0 200px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: center;
 }
 .portfolio-card {
   margin: 0 15px 30px;
