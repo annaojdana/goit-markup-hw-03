@@ -49,8 +49,6 @@ LOGO
 NAVIGATION
 ============= */
 .header-nav {
-  margin: 0 auto;
-  width: 1600px;
   height: 80px;
   background-color: var(--white-color);
   display: flex;
@@ -62,7 +60,7 @@ NAVIGATION
   list-style: none;
 }
 .header-address {
-  margin: 0 204px 0 325px;
+  margin-left: 425px;
 }
 .nav-item {
   margin: 0 23px;
@@ -114,9 +112,7 @@ HEADER IN INDEX HTML
 SECTION ABOUT US
 ============= */
 .about-us {
-  margin: 0 auto;
   padding-top: 94px;
-  width: 1600px;
   background-color: var(--white-color);
 }
 .about-us-text,
@@ -164,10 +160,6 @@ SECTION TEAM
   background-color: var(--light-bg-color);
   padding: 94px 0;
 }
-.team-box {
-  margin: 0 auto;
-  width: 1600px;
-}
 .team-box h2 {
   padding-bottom: 50px;
   font-weight: bold;
@@ -212,9 +204,7 @@ FOOTER
   background-color: var(--dark-bg-color);
 }
 .footer-text {
-  margin: 0 auto;
   padding: 60px 0;
-  width: 1600px;
 }
 .address-box {
   margin-left: 215px;
@@ -245,9 +235,7 @@ FOOTER
 PORTFOLIO SECTION 
 ============= */
 .portfolio {
-  margin: 0 auto;
   padding-bottom: 64px;
-  width: 1600px;
 }
 
 .portfolio-btns {
