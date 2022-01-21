@@ -1,10 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 :root {
   --main-color: #2196f3;
   --dark-heading-color: #212121;
@@ -12,6 +5,7 @@
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
   --grey-color: #757575;
+  --border-color: #ececec;
   --light-border-color: #eeeeee;
   --contact-footer-color: rgba(255, 255, 255, 0.6);
 }
@@ -19,7 +13,29 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--dark-heading-color);
 }
-
+h1,
+h2,
+h3,
+h5 {
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -29,15 +45,17 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
 /* ===========
 LOGO
 ============= */
 .logo {
-  margin: 0 70px 0 215px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
-  text-decoration: none;
   letter-spacing: 0.03em;
   color: var(--dark-heading-color);
 }
@@ -48,23 +66,34 @@ LOGO
 /* ===========
 NAVIGATION
 ============= */
+nav {
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--white-color);
+}
 .header-nav {
   height: 80px;
-  background-color: var(--white-color);
   display: flex;
   align-items: center;
 }
 .nav-items,
 .header-address {
   display: flex;
-  list-style: none;
+}
+.nav-items {
+  margin-left: 70px;
+}
+.nav-items li {
+  margin: 0 23px;
 }
 .header-address {
-  margin-left: 425px;
+  margin-left: 348px;
+  width: 553px;
+  justify-content: flex-end;
+}
+.nav-mail {
+  margin-right: 50px;
 }
 .nav-item {
-  margin: 0 23px;
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -112,20 +141,20 @@ HEADER IN INDEX HTML
 SECTION ABOUT US
 ============= */
 .about-us {
-  padding-top: 94px;
+  padding: 94px 0;
   background-color: var(--white-color);
 }
 .about-us-text,
 .about-us-img {
-  list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-.about-us-text{
-  margin: 0 200px;
+.about-us-text-item {
+  width: 270px;
 }
 .about-us-heading {
-  margin: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
   text-align: center;
 }
 .about-us-heading h2 {
@@ -141,9 +170,6 @@ SECTION ABOUT US
   text-transform: uppercase;
 }
 
-.about-us-text li {
-  margin: 0 15px;
-}
 .about-us-text p {
   margin-top: 10px;
   padding: 0;
@@ -151,9 +177,6 @@ SECTION ABOUT US
   letter-spacing: 0.03em;
   line-height: 1.7;
   color: var(--grey-color);
-}
-.about-us-img img {
-  margin: 50px 15px 0;
 }
 
 /* ===========
@@ -172,11 +195,10 @@ SECTION TEAM
 }
 .team-cards {
   display: flex;
-  list-style: none;
-  justify-content: center;
+  justify-content: space-between;
 }
 .team-card {
-  margin: 0 15px;
+  width: 270px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -210,7 +232,6 @@ FOOTER
   padding: 60px 0;
 }
 .address-box {
-  margin-left: 215px;
   color: var(--white-color);
   font-size: 14px;
   font-style: normal;
@@ -226,7 +247,6 @@ FOOTER
 }
 .address-box a {
   padding-top: 9px;
-  text-decoration: none;
   color: var(--contact-footer-color);
 }
 .address-box a:hover,
@@ -238,14 +258,13 @@ FOOTER
 PORTFOLIO SECTION 
 ============= */
 .portfolio {
-  padding-bottom: 64px;
+  padding: 94px 0;
 }
 
 .portfolio-btns {
-  padding: 94px 0 50px;
-  margin-left: 506px;
-  list-style: none;
+  padding-bottom: 20px;
   display: flex;
+  justify-content: center;
 }
 
 .portfolio-btn {
@@ -262,28 +281,24 @@ PORTFOLIO SECTION
   color: var(--white-color);
 }
 .portfolio-cards {
-  padding: 0 200px;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
+  justify-content: space-between;
 }
 .portfolio-card {
-  margin: 0 15px 30px;
+  margin-top: 30px;
+  width: 370px;
+  height: 404px;
   border: 1px solid var(--light-border-color);
 }
-.portfolio-card img {
-  width: 370px;
-  height: 294px;
-}
 .portfolio-card h4 {
-  margin: 20px 24px 4px;
+  padding: 27px 0 20px 24px;
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.06em;
 }
 .portfolio-card p {
-  padding: 0 24px 20px;
+  padding-left: 24px;
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--grey-color);
